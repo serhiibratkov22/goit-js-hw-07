@@ -17,48 +17,50 @@ body {
 #categories {
   max-width: 440px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 24px;
   background-color: #f9f9ff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
 }
 
-/* Стилі для елементів категорій */
 .item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-/* Стиль для заголовків категорій */
 .item h2 {
   font-size: 20px;
   font-weight: 600;
-  color: #333;
-  margin-bottom: 12px;
+  color: #2e2f42;
+  margin-bottom: 16px;
 }
 
-/* Стилі для списків елементів */
 .item ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Стилі для елементів списку */
 .item ul li {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f6f6fe;
+  border: 1px solid #808080;
   border-radius: 4px;
-  padding: 10px;
+  padding: 16px;
   margin-bottom: 8px;
-  color: #555;
+  color: #2e2f42;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Останній елемент списку без нижнього відступу */
+.item ul li:hover {
+  background-color: #e2e2f6;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
 .item ul li:last-child {
   margin-bottom: 0;
 }
 
-/* Остання категорія без нижнього відступу */
 .item:last-child {
   margin-bottom: 0;
 }
