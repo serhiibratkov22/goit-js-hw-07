@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
 }
 
-/* Загальні стилі для контейнера */
+/* task-1 Загальні стилі для контейнера */
 #categories {
   max-width: 440px;
   margin: 0 auto;
@@ -63,4 +63,45 @@ body {
 
 .item:last-child {
   margin-bottom: 0;
+}
+/* task-2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 32px) / 3);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+/* Для мобільних пристроїв */
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-item {
+    flex-basis: 100%;
+  }
 }
