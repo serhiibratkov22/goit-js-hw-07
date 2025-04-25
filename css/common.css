@@ -18,7 +18,7 @@ body {
   max-width: 440px;
   margin: 0 auto;
   padding: 24px;
-  background-color: #f9f9ff;
+  background-color: #f6f6fe;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -29,8 +29,11 @@ body {
 }
 
 .item h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
   color: #2e2f42;
   margin-bottom: 16px;
 }
@@ -47,6 +50,11 @@ body {
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #2e2f42;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -66,12 +74,13 @@ body {
 }
 /* task-2 */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 0;
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px; /* Горизонтальний проміжок */
+  row-gap: 48px; /* Вертикальний проміжок */
   justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
 .gallery-item {
